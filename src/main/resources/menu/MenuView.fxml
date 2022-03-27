@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgba(0,0,0,0.3);" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="gameOverLabel" ellipsisString="" styleClass="label" text="GAME OVER" textAlignment="CENTER" textOverrun="CLIP">
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label styleClass="label" text="Your score:">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding></Label>
+                  <Label fx:id="scoreLabel" styleClass="label">
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" minHeight="-Infinity" spacing="15.0">
+               <children>
+                  <Button fx:id="closeButton" graphicTextGap="5.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="35.0" prefWidth="130.0" styleClass="button-menu" text="Close" textFill="#da7200">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" glyphSize="20" styleClass="icon" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="resumeButton" graphicTextGap="5.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#resumeGame" prefHeight="39.0" prefWidth="130.0" styleClass="button-menu" text="Resume">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLAY" glyphSize="20" styleClass="icon" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="restartButton" graphicTextGap="5.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="39.0" prefWidth="130.0" styleClass="button-menu" text="Restart">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="REFRESH" glyphSize="20" styleClass="icon" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="shopButton" graphicTextGap="5.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#enterShop" prefHeight="35.0" prefWidth="130.0" styleClass="button-menu" text="Shop">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SHOPPING_CART" glyphSize="20" styleClass="icon" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="leaderboardButton" mnemonicParsing="false" onAction="#openLeaderBoard" styleClass="button-menu-leaderboard" text="show leaderboard">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

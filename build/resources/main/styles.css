@@ -1,0 +1,112 @@
+/* DEFAULTS */
+@font-face {
+    src: url('fonts/BLKCHCRY.TTF');
+}
+
+*{
+    -fx-font-family: "Century Gothic";
+}
+/* GAME */
+.button-game {
+    -fx-background-color: transparent;
+}
+.button-game:hover{
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* MENU */
+.icon {
+    -fx-fill: #e37700;
+}
+.button-menu{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #e37700;
+    -fx-font-size: 20;
+}
+
+.button-menu:hover{
+    -fx-text-fill: #ffa33e;
+}
+
+.button-menu:hover > .icon{
+    -fx-fill: #ffa33e;
+}
+.label{
+    -fx-text-fill: WHITE;
+    -fx-fill: WHITE;
+    -fx-font-size: 26;
+}
+
+
+.button-menu-leaderboard{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: WHITE;
+    -fx-font-size: 15;
+}
+
+.button-menu-leaderboard:hover{
+    -fx-text-fill: SILVER;
+}
+
+/* LEADERBOARD */
+
+.button-leaderboard:hover{
+    -fx-text-fill: #ffa33e;
+}
+
+.button-leaderboard:hover > .icon{
+    -fx-fill: #ffa33e;
+}
+
+.button-leaderboard {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #e37700;
+    -fx-font-size: 20;
+}
+
+.text-field-leaderboard {
+    -fx-font-family: "BlackChancery";
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-font-size: 18;
+}
+.label-leaderboard{
+    -fx-font-family: "BlackChancery";
+    -fx-text-fill: black;
+    -fx-font-size: 19;
+}
+
+.label-leaderboard-scores{
+    -fx-text-fill: black;
+    -fx-font-size: 16;
+}
+
+/* SHOP */
+
+.shopList{
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+.list-cell {
+    -fx-cell-size: 100 ;
+}
+.list-view .list-cell:even {
+    -fx-background-color: rgba(60, 60, 60, 0.5);
+    -fx-text-fill: white;
+}
+.list-view .list-cell:odd {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-text-fill: white;
+}
+.shop-item-label{
+    -fx-font-size: 20;
+}
+
+.button-shop{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #e37700;
+    -fx-font-size: 20;
+}
+.button-shop:hover{
+    -fx-text-fill: #ffa33e;
+}

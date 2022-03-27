@@ -1,0 +1,26 @@
+[
+  {
+    "gravity": 3,
+    "strength": 70,
+    "costs": 5,
+    "id": 1,
+    "name": "Blue birdie",
+    "imagePath": "images/characters/bird.png"
+  },
+  {
+    "gravity": 4,
+    "strength": 75,
+    "costs": 5,
+    "id": 2,
+    "name": "Big Brownie",
+    "imagePath": "images/characters/brown_bear.png"
+  },
+  {
+    "gravity": 2,
+    "strength": 60,
+    "costs": 5,
+    "id": 3,
+    "name": "Quick red fox",
+    "imagePath": "images/characters/fox.png"
+  }
+]

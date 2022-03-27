@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="39.0" layoutY="31.0" mnemonicParsing="false" onAction="#leaveLeaderboard" styleClass="button-leaderboard" stylesheets="@../styles.css" text="Back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <graphic>
+         <FontAwesomeIconView glyphName="ARROW_LEFT" glyphSize="20" styleClass="icon" />
+      </graphic>
+      </Button>
+      <VBox layoutX="498.0" layoutY="270.0" spacing="15.0">
+         <children>
+            <VBox spacing="5.0">
+               <children>
+                  <Label fx:id="enterYourNameLabel" style="-fx-font-family: BlackChancery;" styleClass="label-leaderboard" stylesheets="@../styles.css" text="Name">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+                  <TextField fx:id="enterYourNameTextfield" onAction="#setPlayerName" prefHeight="27.0" prefWidth="136.0" promptText="enter Name" style="-fx-background-color: transparent;" styleClass="text-field-leaderboard" stylesheets="@../styles.css">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets right="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label fx:id="yourScoreLabel" style="-fx-font-family: BlackChancery;" styleClass="label-leaderboard" stylesheets="@../styles.css" text="Score">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="yourScore" style="-fx-font-family: BlackChancery;" styleClass="label-leaderboard" stylesheets="@../styles.css">
+                     <padding>
+                        <Insets left="7.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutY="260.0" maxWidth="200.0" minWidth="200.0" spacing="5.0">
+         <children>
+            <ImageView fitWidth="40.0" preserveRatio="true">
+               <image>
+                  <Image url="@medal_silver.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbl_secondScore" alignment="CENTER" contentDisplay="CENTER" maxWidth="200.0" prefHeight="30.0" styleClass="label-leaderboard-scores" />
+            <ImageView fitWidth="60.0">
+               <image>
+                  <Image url="@pillar2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="120.0" layoutY="230.0" maxWidth="200.0" minWidth="200.0" spacing="5.0">
+         <children>
+            <ImageView fitWidth="40.0" preserveRatio="true">
+               <image>
+                  <Image url="@medal_gold.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbl_firstScore" alignment="CENTER" contentDisplay="CENTER" maxWidth="200.0" prefHeight="30.0" styleClass="label-leaderboard-scores" />
+            <ImageView fitWidth="60.0">
+               <image>
+                  <Image url="@pillar1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="240.0" layoutY="282.0" maxWidth="200.0" minWidth="200.0" spacing="5.0">
+         <children>
+            <ImageView fitWidth="40.0" preserveRatio="true">
+               <image>
+                  <Image url="@medal_bronze.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbl_thirdScore" alignment="CENTER" contentDisplay="CENTER" maxWidth="200.0" prefHeight="30.0" styleClass="label-leaderboard-scores" />
+            <ImageView fitWidth="60.0">
+               <image>
+                  <Image url="@pillar3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
